@@ -1024,7 +1024,7 @@ class MAST::Frame is MAST::Node {
                 $bytecode.write_double($arg);
             }
             elsif $type == nqp::const::MVM_OPERAND_STR {
-                $bytecode.write_uint32($arg);
+                $bytecode.write_uint32(self.add-string($arg));
             }
             elsif $type == nqp::const::MVM_OPERAND_INS {
                 my $key := nqp::objectid($arg);
