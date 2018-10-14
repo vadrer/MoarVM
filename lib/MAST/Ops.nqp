@@ -821,14 +821,13 @@ BEGIN {
     2057,
     2061,
     2065,
-    2068,
-    2071,
+    2069,
+    2072,
     2075,
     2079,
-    2082,
-    2085,
+    2083,
+    2086,
     2089,
-    2091,
     2093,
     2095,
     2097,
@@ -838,62 +837,64 @@ BEGIN {
     2105,
     2107,
     2109,
-    2112,
-    2115,
-    2118,
-    2121,
+    2111,
+    2113,
+    2116,
+    2119,
+    2122,
     2125,
-    2126,
-    2128,
+    2129,
+    2130,
     2132,
-    2135,
-    2138,
-    2141,
-    2144,
-    2147,
-    2150,
-    2153,
-    2156,
-    2159,
-    2162,
-    2165,
-    2168,
-    2171,
-    2174,
-    2177,
-    2180,
+    2136,
+    2139,
+    2142,
+    2145,
+    2148,
+    2151,
+    2154,
+    2157,
+    2160,
+    2163,
+    2166,
+    2169,
+    2172,
+    2175,
+    2178,
+    2181,
     2184,
     2188,
-    2191,
-    2194,
-    2197,
-    2200,
-    2203,
-    2206,
-    2209,
-    2212,
-    2215,
-    2218,
-    2221,
+    2192,
+    2195,
+    2198,
+    2201,
+    2204,
+    2207,
+    2210,
+    2213,
+    2216,
+    2219,
+    2222,
     2225,
     2229,
-    2232,
-    2235,
+    2233,
     2236,
-    2238,
+    2239,
     2240,
     2242,
+    2244,
     2246,
-    2248,
     2250,
-    2250,
-    2250,
-    2251,
     2252,
-    2252,
-    2253,
+    2254,
+    2254,
+    2254,
     2255,
-    2259);
+    2256,
+    2256,
+    2257,
+    2259,
+    2263);
     MAST::Ops.WHO<@counts> := nqp::list_i(0,
     2,
     2,
@@ -1705,6 +1706,7 @@ BEGIN {
     3,
     2,
     2,
+    4,
     4,
     4,
     4,
@@ -3840,6 +3842,10 @@ BEGIN {
     161,
     66,
     65,
+    65,
+    65,
+    66,
+    65,
     128,
     152,
     66,
@@ -4860,83 +4866,84 @@ BEGIN {
     'writeint', 811,
     'writeuint', 812,
     'writenum', 813,
-    'sp_guard', 814,
-    'sp_guardconc', 815,
-    'sp_guardtype', 816,
-    'sp_guardsf', 817,
-    'sp_guardsfouter', 818,
-    'sp_guardobj', 819,
-    'sp_guardnotobj', 820,
-    'sp_guardjustconc', 821,
-    'sp_guardjusttype', 822,
-    'sp_rebless', 823,
-    'sp_resolvecode', 824,
-    'sp_decont', 825,
-    'sp_getlex_o', 826,
-    'sp_getlex_ins', 827,
-    'sp_getlex_no', 828,
-    'sp_getarg_o', 829,
-    'sp_getarg_i', 830,
-    'sp_getarg_n', 831,
-    'sp_getarg_s', 832,
-    'sp_fastinvoke_v', 833,
-    'sp_fastinvoke_i', 834,
-    'sp_fastinvoke_n', 835,
-    'sp_fastinvoke_s', 836,
-    'sp_fastinvoke_o', 837,
-    'sp_speshresolve', 838,
-    'sp_paramnamesused', 839,
-    'sp_getspeshslot', 840,
-    'sp_findmeth', 841,
-    'sp_fastcreate', 842,
-    'sp_get_o', 843,
-    'sp_get_i64', 844,
-    'sp_get_i32', 845,
-    'sp_get_i16', 846,
-    'sp_get_i8', 847,
-    'sp_get_n', 848,
-    'sp_get_s', 849,
-    'sp_bind_o', 850,
-    'sp_bind_i64', 851,
-    'sp_bind_i32', 852,
-    'sp_bind_i16', 853,
-    'sp_bind_i8', 854,
-    'sp_bind_n', 855,
-    'sp_bind_s', 856,
-    'sp_p6oget_o', 857,
-    'sp_p6ogetvt_o', 858,
-    'sp_p6ogetvc_o', 859,
-    'sp_p6oget_i', 860,
-    'sp_p6oget_n', 861,
-    'sp_p6oget_s', 862,
-    'sp_p6obind_o', 863,
-    'sp_p6obind_i', 864,
-    'sp_p6obind_n', 865,
-    'sp_p6obind_s', 866,
-    'sp_deref_get_i64', 867,
-    'sp_deref_get_n', 868,
-    'sp_deref_bind_i64', 869,
-    'sp_deref_bind_n', 870,
-    'sp_getlexvia_o', 871,
-    'sp_getlexvia_ins', 872,
-    'sp_getstringfrom', 873,
-    'sp_getwvalfrom', 874,
-    'sp_jit_enter', 875,
-    'sp_boolify_iter', 876,
-    'sp_boolify_iter_arr', 877,
-    'sp_boolify_iter_hash', 878,
-    'sp_cas_o', 879,
-    'sp_atomicload_o', 880,
-    'sp_atomicstore_o', 881,
-    'prof_enter', 882,
-    'prof_enterspesh', 883,
-    'prof_enterinline', 884,
-    'prof_enternative', 885,
-    'prof_exit', 886,
-    'prof_allocated', 887,
-    'ctw_check', 888,
-    'coverage_log', 889,
-    'breakpoint', 890);
+    'serializetobuf', 814,
+    'sp_guard', 815,
+    'sp_guardconc', 816,
+    'sp_guardtype', 817,
+    'sp_guardsf', 818,
+    'sp_guardsfouter', 819,
+    'sp_guardobj', 820,
+    'sp_guardnotobj', 821,
+    'sp_guardjustconc', 822,
+    'sp_guardjusttype', 823,
+    'sp_rebless', 824,
+    'sp_resolvecode', 825,
+    'sp_decont', 826,
+    'sp_getlex_o', 827,
+    'sp_getlex_ins', 828,
+    'sp_getlex_no', 829,
+    'sp_getarg_o', 830,
+    'sp_getarg_i', 831,
+    'sp_getarg_n', 832,
+    'sp_getarg_s', 833,
+    'sp_fastinvoke_v', 834,
+    'sp_fastinvoke_i', 835,
+    'sp_fastinvoke_n', 836,
+    'sp_fastinvoke_s', 837,
+    'sp_fastinvoke_o', 838,
+    'sp_speshresolve', 839,
+    'sp_paramnamesused', 840,
+    'sp_getspeshslot', 841,
+    'sp_findmeth', 842,
+    'sp_fastcreate', 843,
+    'sp_get_o', 844,
+    'sp_get_i64', 845,
+    'sp_get_i32', 846,
+    'sp_get_i16', 847,
+    'sp_get_i8', 848,
+    'sp_get_n', 849,
+    'sp_get_s', 850,
+    'sp_bind_o', 851,
+    'sp_bind_i64', 852,
+    'sp_bind_i32', 853,
+    'sp_bind_i16', 854,
+    'sp_bind_i8', 855,
+    'sp_bind_n', 856,
+    'sp_bind_s', 857,
+    'sp_p6oget_o', 858,
+    'sp_p6ogetvt_o', 859,
+    'sp_p6ogetvc_o', 860,
+    'sp_p6oget_i', 861,
+    'sp_p6oget_n', 862,
+    'sp_p6oget_s', 863,
+    'sp_p6obind_o', 864,
+    'sp_p6obind_i', 865,
+    'sp_p6obind_n', 866,
+    'sp_p6obind_s', 867,
+    'sp_deref_get_i64', 868,
+    'sp_deref_get_n', 869,
+    'sp_deref_bind_i64', 870,
+    'sp_deref_bind_n', 871,
+    'sp_getlexvia_o', 872,
+    'sp_getlexvia_ins', 873,
+    'sp_getstringfrom', 874,
+    'sp_getwvalfrom', 875,
+    'sp_jit_enter', 876,
+    'sp_boolify_iter', 877,
+    'sp_boolify_iter_arr', 878,
+    'sp_boolify_iter_hash', 879,
+    'sp_cas_o', 880,
+    'sp_atomicload_o', 881,
+    'sp_atomicstore_o', 882,
+    'prof_enter', 883,
+    'prof_enterspesh', 884,
+    'prof_enterinline', 885,
+    'prof_enternative', 886,
+    'prof_exit', 887,
+    'prof_allocated', 888,
+    'ctw_check', 889,
+    'coverage_log', 890,
+    'breakpoint', 891);
     MAST::Ops.WHO<@names> := nqp::list_s('no_op',
     'const_i8',
     'const_i16',
@@ -5751,6 +5758,7 @@ BEGIN {
     'writeint',
     'writeuint',
     'writenum',
+    'serializetobuf',
     'sp_guard',
     'sp_guardconc',
     'sp_guardtype',
@@ -5833,7 +5841,7 @@ BEGIN {
         $bytecode.write_uint16(0);
         
     },
-    'const_i8', sub ($op0, $op1) {
+    'const_i8', sub ($op0, int8 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(1);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -5843,7 +5851,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'const_i16', sub ($op0, $op1) {
+    'const_i16', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(2);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -5853,7 +5861,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'const_i32', sub ($op0, $op1) {
+    'const_i32', sub ($op0, int32 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(3);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -5885,23 +5893,23 @@ BEGIN {
             $bytecode.write_uint64($value);
         }
     },
-    'const_n32', sub ($op0, $op1) {
+    'const_n32', sub ($op0, num32 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(5);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         $bytecode.write_double($op1);
     },
-    'const_n64', sub ($op0, $op1) {
+    'const_n64', sub ($op0, num64 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(6);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         $bytecode.write_double($op1);
     },
-    'const_s', sub ($op0, $op1) {
+    'const_s', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(7);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
     'set', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
@@ -6058,7 +6066,7 @@ BEGIN {
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op1);
     },
-    'jumplist', sub ($op0, $op1) {
+    'jumplist', sub (int64 $op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(34);
         {my int $value := $op0; $bytecode.write_uint64($value);}
@@ -6082,52 +6090,52 @@ BEGIN {
                 $bytecode.write_uint16($op0.frames_out);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'getlex_ni', sub ($op0, $op1) {
+    'getlex_ni', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(37);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'getlex_nn', sub ($op0, $op1) {
+    'getlex_nn', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(38);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'getlex_ns', sub ($op0, $op1) {
+    'getlex_ns', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(39);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'getlex_no', sub ($op0, $op1) {
+    'getlex_no', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(40);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'bindlex_ni', sub ($op0, $op1) {
+    'bindlex_ni', sub (str $op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(41);
-        $bytecode.write_uint32($op0);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op0));
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'bindlex_nn', sub ($op0, $op1) {
+    'bindlex_nn', sub (str $op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(42);
-        $bytecode.write_uint32($op0);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op0));
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'bindlex_ns', sub ($op0, $op1) {
+    'bindlex_ns', sub (str $op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(43);
-        $bytecode.write_uint32($op0);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op0));
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'bindlex_no', sub ($op0, $op1) {
+    'bindlex_no', sub (str $op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(44);
-        $bytecode.write_uint32($op0);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op0));
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
     'getlex_ng', sub ($op0, $op1) {
@@ -6154,11 +6162,11 @@ BEGIN {
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'setlexvalue', sub ($op0, $op1, $op2, $op3) {
+    'setlexvalue', sub ($op0, str $op1, $op2, int16 $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(49);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
         {my $index := $op2.index;$bytecode.write_uint16($index);}
         {my int $value := $op3;
                     if $value < -32768 || 32767 < $value {
@@ -6661,7 +6669,7 @@ BEGIN {
         $bytecode.write_uint16(127);
         
     },
-    'arg_i', sub ($op0, $op1) {
+    'arg_i', sub (int16 $op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(128);
         {my int $value := $op0;
@@ -6671,7 +6679,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'arg_n', sub ($op0, $op1) {
+    'arg_n', sub (int16 $op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(129);
         {my int $value := $op0;
@@ -6681,7 +6689,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'arg_s', sub ($op0, $op1) {
+    'arg_s', sub (int16 $op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(130);
         {my int $value := $op0;
@@ -6691,7 +6699,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'arg_o', sub ($op0, $op1) {
+    'arg_o', sub (int16 $op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(131);
         {my int $value := $op0;
@@ -6701,7 +6709,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'argconst_i', sub ($op0, $op1) {
+    'argconst_i', sub (int16 $op0, int64 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(132);
         {my int $value := $op0;
@@ -6711,7 +6719,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my int $value := $op1; $bytecode.write_uint64($value);}
     },
-    'argconst_n', sub ($op0, $op1) {
+    'argconst_n', sub (int16 $op0, num64 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(133);
         {my int $value := $op0;
@@ -6721,7 +6729,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         $bytecode.write_double($op1);
     },
-    'argconst_s', sub ($op0, $op1) {
+    'argconst_s', sub (int16 $op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(134);
         {my int $value := $op0;
@@ -6729,7 +6737,7 @@ BEGIN {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
     'invoke_v', sub ($op0) {
         my $bytecode := $*MAST_FRAME.bytecode;
@@ -6760,7 +6768,7 @@ BEGIN {
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'checkarity', sub ($op0, $op1) {
+    'checkarity', sub (int16 $op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(140);
         {my int $value := $op0;
@@ -6774,7 +6782,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'param_rp_i', sub ($op0, $op1) {
+    'param_rp_i', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(141);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -6784,7 +6792,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'param_rp_n', sub ($op0, $op1) {
+    'param_rp_n', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(142);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -6794,7 +6802,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'param_rp_s', sub ($op0, $op1) {
+    'param_rp_s', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(143);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -6804,7 +6812,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'param_rp_o', sub ($op0, $op1) {
+    'param_rp_o', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(144);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -6814,7 +6822,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'param_op_i', sub ($op0, $op1, $op2) {
+    'param_op_i', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(145);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -6825,7 +6833,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op2);
     },
-    'param_op_n', sub ($op0, $op1, $op2) {
+    'param_op_n', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(146);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -6836,7 +6844,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op2);
     },
-    'param_op_s', sub ($op0, $op1, $op2) {
+    'param_op_s', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(147);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -6847,7 +6855,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op2);
     },
-    'param_op_o', sub ($op0, $op1, $op2) {
+    'param_op_o', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(148);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -6858,59 +6866,59 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op2);
     },
-    'param_rn_i', sub ($op0, $op1) {
+    'param_rn_i', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(149);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'param_rn_n', sub ($op0, $op1) {
+    'param_rn_n', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(150);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'param_rn_s', sub ($op0, $op1) {
+    'param_rn_s', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(151);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'param_rn_o', sub ($op0, $op1) {
+    'param_rn_o', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(152);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'param_on_i', sub ($op0, $op1, $op2) {
+    'param_on_i', sub ($op0, str $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(153);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op2);
     },
-    'param_on_n', sub ($op0, $op1, $op2) {
+    'param_on_n', sub ($op0, str $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(154);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op2);
     },
-    'param_on_s', sub ($op0, $op1, $op2) {
+    'param_on_s', sub ($op0, str $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(155);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op2);
     },
-    'param_on_o', sub ($op0, $op1, $op2) {
+    'param_on_o', sub ($op0, str $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(156);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op2);
     },
-    'param_sp', sub ($op0, $op1) {
+    'param_sp', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(157);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -6929,9 +6937,7 @@ BEGIN {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(159);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        nqp::die("Expected MAST::Frame, but didn't get one")
-                        unless $op1.isa(MAST::Frame);
-                    {my $index := $*MAST_FRAME.writer.get_frame_index($op1);
+        {my $index := $*MAST_FRAME.writer.get_frame_index($op1);
                     $bytecode.write_uint16($index);}
     },
     'caller', sub ($op0, $op1) {
@@ -7010,19 +7016,19 @@ BEGIN {
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'throwcatdyn', sub ($op0, $op1) {
+    'throwcatdyn', sub ($op0, int64 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(173);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my int $value := $op1; $bytecode.write_uint64($value);}
     },
-    'throwcatlex', sub ($op0, $op1) {
+    'throwcatlex', sub ($op0, int64 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(174);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my int $value := $op1; $bytecode.write_uint64($value);}
     },
-    'throwcatlexotic', sub ($op0, $op1) {
+    'throwcatlexotic', sub ($op0, int64 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(175);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -7333,20 +7339,20 @@ BEGIN {
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'indexat', sub ($op0, $op1, $op2, $op3) {
+    'indexat', sub ($op0, $op1, str $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(222);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op3);
     },
-    'indexnat', sub ($op0, $op1, $op2, $op3) {
+    'indexnat', sub ($op0, $op1, str $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(223);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op3);
     },
     'unipropcode', sub ($op0, $op1) {
@@ -7371,7 +7377,7 @@ BEGIN {
         {my $index := $op3.index;$bytecode.write_uint16($index);}
         {my $index := $op4.index;$bytecode.write_uint16($index);}
     },
-    'hasunipropc', sub ($op0, $op1, $op2, $op3, $op4) {
+    'hasunipropc', sub ($op0, $op1, $op2, int16 $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(227);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -7543,12 +7549,12 @@ BEGIN {
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op1);
     },
-    'findmeth', sub ($op0, $op1, $op2) {
+    'findmeth', sub ($op0, $op1, str $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(250);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
     },
     'findmeth_s', sub ($op0, $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
@@ -7557,12 +7563,12 @@ BEGIN {
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'can', sub ($op0, $op1, $op2) {
+    'can', sub ($op0, $op1, str $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(252);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
     },
     'can_s', sub ($op0, $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
@@ -7653,12 +7659,12 @@ BEGIN {
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'bindattr_i', sub ($op0, $op1, $op2, $op3, $op4) {
+    'bindattr_i', sub ($op0, $op1, str $op2, $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(267);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         {my $index := $op3.index;$bytecode.write_uint16($index);}
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
@@ -7666,12 +7672,12 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'bindattr_n', sub ($op0, $op1, $op2, $op3, $op4) {
+    'bindattr_n', sub ($op0, $op1, str $op2, $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(268);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         {my $index := $op3.index;$bytecode.write_uint16($index);}
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
@@ -7679,12 +7685,12 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'bindattr_s', sub ($op0, $op1, $op2, $op3, $op4) {
+    'bindattr_s', sub ($op0, $op1, str $op2, $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(269);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         {my $index := $op3.index;$bytecode.write_uint16($index);}
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
@@ -7692,12 +7698,12 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'bindattr_o', sub ($op0, $op1, $op2, $op3, $op4) {
+    'bindattr_o', sub ($op0, $op1, str $op2, $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(270);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         {my $index := $op3.index;$bytecode.write_uint16($index);}
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
@@ -7737,52 +7743,52 @@ BEGIN {
         {my $index := $op2.index;$bytecode.write_uint16($index);}
         {my $index := $op3.index;$bytecode.write_uint16($index);}
     },
-    'getattr_i', sub ($op0, $op1, $op2, $op3, $op4) {
+    'getattr_i', sub ($op0, $op1, $op2, str $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(275);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op3);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op3));
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
     },
-    'getattr_n', sub ($op0, $op1, $op2, $op3, $op4) {
+    'getattr_n', sub ($op0, $op1, $op2, str $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(276);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op3);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op3));
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
     },
-    'getattr_s', sub ($op0, $op1, $op2, $op3, $op4) {
+    'getattr_s', sub ($op0, $op1, $op2, str $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(277);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op3);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op3));
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
     },
-    'getattr_o', sub ($op0, $op1, $op2, $op3, $op4) {
+    'getattr_o', sub ($op0, $op1, $op2, str $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(278);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op3);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op3));
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
@@ -8582,7 +8588,7 @@ BEGIN {
         {my $index := $op3.index;$bytecode.write_uint16($index);}
         {my $index := $op4.index;$bytecode.write_uint16($index);}
     },
-    'wval', sub ($op0, $op1, $op2) {
+    'wval', sub ($op0, int16 $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(406);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -8597,7 +8603,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'wval_wide', sub ($op0, $op1, $op2) {
+    'wval_wide', sub ($op0, int16 $op1, int64 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(407);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -9202,12 +9208,12 @@ BEGIN {
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'tryfindmeth', sub ($op0, $op1, $op2) {
+    'tryfindmeth', sub ($op0, $op1, str $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(499);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
     },
     'tryfindmeth_s', sub ($op0, $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
@@ -9837,7 +9843,7 @@ BEGIN {
         $bytecode.write_uint16(596);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
     },
-    'const_i64_16', sub ($op0, $op1) {
+    'const_i64_16', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(597);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -9847,7 +9853,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'const_i64_32', sub ($op0, $op1) {
+    'const_i64_32', sub ($op0, int32 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(598);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -9863,64 +9869,64 @@ BEGIN {
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'param_rn2_i', sub ($op0, $op1, $op2) {
+    'param_rn2_i', sub ($op0, str $op1, str $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(600);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
     },
-    'param_rn2_n', sub ($op0, $op1, $op2) {
+    'param_rn2_n', sub ($op0, str $op1, str $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(601);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
     },
-    'param_rn2_s', sub ($op0, $op1, $op2) {
+    'param_rn2_s', sub ($op0, str $op1, str $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(602);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
     },
-    'param_rn2_o', sub ($op0, $op1, $op2) {
+    'param_rn2_o', sub ($op0, str $op1, str $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(603);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
     },
-    'param_on2_i', sub ($op0, $op1, $op2, $op3) {
+    'param_on2_i', sub ($op0, str $op1, str $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(604);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op3);
     },
-    'param_on2_n', sub ($op0, $op1, $op2, $op3) {
+    'param_on2_n', sub ($op0, str $op1, str $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(605);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op3);
     },
-    'param_on2_s', sub ($op0, $op1, $op2, $op3) {
+    'param_on2_s', sub ($op0, str $op1, str $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(606);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op3);
     },
-    'param_on2_o', sub ($op0, $op1, $op2, $op3) {
+    'param_on2_o', sub ($op0, str $op1, str $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(607);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op3);
     },
     'osrpoint', sub () {
@@ -10137,23 +10143,23 @@ BEGIN {
                 $bytecode.write_uint16($op1.index);
                 $bytecode.write_uint16($op1.frames_out);}
     },
-    'getlexref_ni', sub ($op0, $op1) {
+    'getlexref_ni', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(641);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'getlexref_nn', sub ($op0, $op1) {
+    'getlexref_nn', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(642);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'getlexref_ns', sub ($op0, $op1) {
+    'getlexref_ns', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(643);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
     'atposref_i', sub ($op0, $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
@@ -10176,39 +10182,39 @@ BEGIN {
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'getattrref_i', sub ($op0, $op1, $op2, $op3, $op4) {
+    'getattrref_i', sub ($op0, $op1, $op2, str $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(647);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op3);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op3));
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
     },
-    'getattrref_n', sub ($op0, $op1, $op2, $op3, $op4) {
+    'getattrref_n', sub ($op0, $op1, $op2, str $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(648);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op3);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op3));
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
     },
-    'getattrref_s', sub ($op0, $op1, $op2, $op3, $op4) {
+    'getattrref_s', sub ($op0, $op1, $op2, str $op3, int16 $op4) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(649);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op3);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op3));
         {my int $value := $op4;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
@@ -10801,7 +10807,7 @@ BEGIN {
                 $bytecode.write_uint16($op1.index);
                 $bytecode.write_uint16($op1.frames_out);}
     },
-    'param_rp_u', sub ($op0, $op1) {
+    'param_rp_u', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(730);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -10811,7 +10817,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'param_op_u', sub ($op0, $op1, $op2) {
+    'param_op_u', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(731);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -10822,32 +10828,32 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op2);
     },
-    'param_rn_u', sub ($op0, $op1) {
+    'param_rn_u', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(732);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'param_on_u', sub ($op0, $op1, $op2) {
+    'param_on_u', sub ($op0, str $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(733);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op2);
     },
-    'param_rn2_u', sub ($op0, $op1, $op2) {
+    'param_rn2_u', sub ($op0, str $op1, str $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(734);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
     },
-    'param_on2_u', sub ($op0, $op1, $op2, $op3) {
+    'param_on2_u', sub ($op0, str $op1, str $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(735);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
-        $bytecode.write_uint32($op2);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
         $*MAST_FRAME.compile_operand($bytecode, 0, nqp::const::MVM_OPERAND_INS, $op3);
     },
     'stat_time', sub ($op0, $op1, $op2) {
@@ -10881,14 +10887,14 @@ BEGIN {
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'throwpayloadlex', sub ($op0, $op1, $op2) {
+    'throwpayloadlex', sub ($op0, int64 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(741);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my int $value := $op1; $bytecode.write_uint64($value);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'throwpayloadlexcaller', sub ($op0, $op1, $op2) {
+    'throwpayloadlexcaller', sub ($op0, int64 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(742);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11251,11 +11257,11 @@ BEGIN {
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'speshresolve', sub ($op0, $op1) {
+    'speshresolve', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(796);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
     'speshguardtype', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
@@ -11278,13 +11284,13 @@ BEGIN {
         $bytecode.write_uint16(800);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
     },
-    'speshguardgetattr', sub ($op0, $op1, $op2, $op3) {
+    'speshguardgetattr', sub ($op0, $op1, $op2, str $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(801);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op3);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op3));
     },
     'atomicbindattr_o', sub ($op0, $op1, $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
@@ -11372,19 +11378,15 @@ BEGIN {
         {my $index := $op2.index;$bytecode.write_uint16($index);}
         {my $index := $op3.index;$bytecode.write_uint16($index);}
     },
-    'sp_guard', sub ($op0, $op1, $op2, $op3) {
+    'serializetobuf', sub ($op0, $op1, $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(814);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        
-        {my int $value := $op3;
-                    if $value < 0 || 4294967296 < $value {
-                        nqp::die("Value outside range of 32-bit MAST::IVal");
-                    }
-                    $bytecode.write_uint64($value);}
+        {my $index := $op2.index;$bytecode.write_uint16($index);}
+        {my $index := $op3.index;$bytecode.write_uint16($index);}
     },
-    'sp_guardconc', sub ($op0, $op1, $op2, $op3) {
+    'sp_guard', sub ($op0, $op1, $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(815);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11396,7 +11398,7 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardtype', sub ($op0, $op1, $op2, $op3) {
+    'sp_guardconc', sub ($op0, $op1, $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(816);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11408,18 +11410,19 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardsf', sub ($op0, $op1, $op2) {
+    'sp_guardtype', sub ($op0, $op1, $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(817);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
+        {my $index := $op1.index;$bytecode.write_uint16($index);}
         
-        {my int $value := $op2;
+        {my int $value := $op3;
                     if $value < 0 || 4294967296 < $value {
                         nqp::die("Value outside range of 32-bit MAST::IVal");
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardsfouter', sub ($op0, $op1, $op2) {
+    'sp_guardsf', sub ($op0, $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(818);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11430,19 +11433,18 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardobj', sub ($op0, $op1, $op2, $op3) {
+    'sp_guardsfouter', sub ($op0, $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(819);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my $index := $op1.index;$bytecode.write_uint16($index);}
         
-        {my int $value := $op3;
+        {my int $value := $op2;
                     if $value < 0 || 4294967296 < $value {
                         nqp::die("Value outside range of 32-bit MAST::IVal");
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardnotobj', sub ($op0, $op1, $op2, $op3) {
+    'sp_guardobj', sub ($op0, $op1, $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(820);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11454,18 +11456,19 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardjustconc', sub ($op0, $op1, $op2) {
+    'sp_guardnotobj', sub ($op0, $op1, $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(821);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
-        {my int $value := $op2;
+        
+        {my int $value := $op3;
                     if $value < 0 || 4294967296 < $value {
                         nqp::die("Value outside range of 32-bit MAST::IVal");
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardjusttype', sub ($op0, $op1, $op2) {
+    'sp_guardjustconc', sub ($op0, $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(822);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11476,9 +11479,20 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_rebless', sub ($op0, $op1, $op2, $op3) {
+    'sp_guardjusttype', sub ($op0, $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(823);
+        {my $index := $op0.index;$bytecode.write_uint16($index);}
+        {my $index := $op1.index;$bytecode.write_uint16($index);}
+        {my int $value := $op2;
+                    if $value < 0 || 4294967296 < $value {
+                        nqp::die("Value outside range of 32-bit MAST::IVal");
+                    }
+                    $bytecode.write_uint64($value);}
+    },
+    'sp_rebless', sub ($op0, $op1, $op2, $op3) {
+        my $bytecode := $*MAST_FRAME.bytecode;
+        $bytecode.write_uint16(824);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
@@ -11496,20 +11510,11 @@ BEGIN {
     },
     'sp_decont', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(825);
+        $bytecode.write_uint16(826);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
     'sp_getlex_o', sub ($op0, $op1) {
-        my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(826);
-        {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {nqp::die("Expected MAST::Lexical, but didn't get one")
-                    unless $op1.isa(MAST::Lexical);
-                $bytecode.write_uint16($op1.index);
-                $bytecode.write_uint16($op1.frames_out);}
-    },
-    'sp_getlex_ins', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(827);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11518,23 +11523,22 @@ BEGIN {
                 $bytecode.write_uint16($op1.index);
                 $bytecode.write_uint16($op1.frames_out);}
     },
-    'sp_getlex_no', sub ($op0, $op1) {
+    'sp_getlex_ins', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(828);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        {nqp::die("Expected MAST::Lexical, but didn't get one")
+                    unless $op1.isa(MAST::Lexical);
+                $bytecode.write_uint16($op1.index);
+                $bytecode.write_uint16($op1.frames_out);}
     },
-    'sp_getarg_o', sub ($op0, $op1) {
+    'sp_getlex_no', sub ($op0, str $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(829);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my int $value := $op1;
-                    if $value < -32768 || 32767 < $value {
-                        nqp::die("Value outside range of 16-bit MAST::IVal");
-                    }
-                    $bytecode.write_uint16($value);}
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
     },
-    'sp_getarg_i', sub ($op0, $op1) {
+    'sp_getarg_o', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(830);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11544,7 +11548,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_getarg_n', sub ($op0, $op1) {
+    'sp_getarg_i', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(831);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11554,7 +11558,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_getarg_s', sub ($op0, $op1) {
+    'sp_getarg_n', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(832);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11564,7 +11568,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_fastinvoke_v', sub ($op0, $op1) {
+    'sp_getarg_s', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(833);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11574,18 +11578,17 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_fastinvoke_i', sub ($op0, $op1, $op2) {
+    'sp_fastinvoke_v', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(834);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my $index := $op1.index;$bytecode.write_uint16($index);}
-        {my int $value := $op2;
+        {my int $value := $op1;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_fastinvoke_n', sub ($op0, $op1, $op2) {
+    'sp_fastinvoke_i', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(835);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11596,7 +11599,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_fastinvoke_s', sub ($op0, $op1, $op2) {
+    'sp_fastinvoke_n', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(836);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11607,7 +11610,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_fastinvoke_o', sub ($op0, $op1, $op2) {
+    'sp_fastinvoke_s', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(837);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11618,11 +11621,22 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_speshresolve', sub ($op0, $op1, $op2, $op3) {
+    'sp_fastinvoke_o', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(838);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op1);
+        {my $index := $op1.index;$bytecode.write_uint16($index);}
+        {my int $value := $op2;
+                    if $value < -32768 || 32767 < $value {
+                        nqp::die("Value outside range of 16-bit MAST::IVal");
+                    }
+                    $bytecode.write_uint16($value);}
+    },
+    'sp_speshresolve', sub ($op0, str $op1, uint32 $op2, $op3) {
+        my $bytecode := $*MAST_FRAME.bytecode;
+        $bytecode.write_uint16(839);
+        {my $index := $op0.index;$bytecode.write_uint16($index);}
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op1));
         {my int $value := $op2;
                     if $value < 0 || 4294967296 < $value {
                         nqp::die("Value outside range of 32-bit MAST::IVal");
@@ -11632,26 +11646,26 @@ BEGIN {
     },
     'sp_paramnamesused', sub ($op0) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(839);
+        $bytecode.write_uint16(840);
         
     },
     'sp_getspeshslot', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(840);
-        {my $index := $op0.index;$bytecode.write_uint16($index);}
-        
-    },
-    'sp_findmeth', sub ($op0, $op1, $op2, $op3) {
-        my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(841);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my $index := $op1.index;$bytecode.write_uint16($index);}
-        $bytecode.write_uint32($op2);
         
     },
-    'sp_fastcreate', sub ($op0, $op1, $op2) {
+    'sp_findmeth', sub ($op0, $op1, str $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(842);
+        {my $index := $op0.index;$bytecode.write_uint16($index);}
+        {my $index := $op1.index;$bytecode.write_uint16($index);}
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op2));
+        
+    },
+    'sp_fastcreate', sub ($op0, int16 $op1, $op2) {
+        my $bytecode := $*MAST_FRAME.bytecode;
+        $bytecode.write_uint16(843);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my int $value := $op1;
                     if $value < -32768 || 32767 < $value {
@@ -11660,18 +11674,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         
     },
-    'sp_get_o', sub ($op0, $op1, $op2) {
-        my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(843);
-        {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my $index := $op1.index;$bytecode.write_uint16($index);}
-        {my int $value := $op2;
-                    if $value < -32768 || 32767 < $value {
-                        nqp::die("Value outside range of 16-bit MAST::IVal");
-                    }
-                    $bytecode.write_uint16($value);}
-    },
-    'sp_get_i64', sub ($op0, $op1, $op2) {
+    'sp_get_o', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(844);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11682,7 +11685,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_get_i32', sub ($op0, $op1, $op2) {
+    'sp_get_i64', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(845);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11693,7 +11696,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_get_i16', sub ($op0, $op1, $op2) {
+    'sp_get_i32', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(846);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11704,7 +11707,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_get_i8', sub ($op0, $op1, $op2) {
+    'sp_get_i16', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(847);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11715,7 +11718,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_get_n', sub ($op0, $op1, $op2) {
+    'sp_get_i8', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(848);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11726,7 +11729,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_get_s', sub ($op0, $op1, $op2) {
+    'sp_get_n', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(849);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11737,18 +11740,18 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_bind_o', sub ($op0, $op1, $op2) {
+    'sp_get_s', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(850);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my int $value := $op1;
+        {my $index := $op1.index;$bytecode.write_uint16($index);}
+        {my int $value := $op2;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
-        {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_bind_i64', sub ($op0, $op1, $op2) {
+    'sp_bind_o', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(851);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11759,7 +11762,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_bind_i32', sub ($op0, $op1, $op2) {
+    'sp_bind_i64', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(852);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11770,7 +11773,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_bind_i16', sub ($op0, $op1, $op2) {
+    'sp_bind_i32', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(853);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11781,7 +11784,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_bind_i8', sub ($op0, $op1, $op2) {
+    'sp_bind_i16', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(854);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11792,7 +11795,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_bind_n', sub ($op0, $op1, $op2) {
+    'sp_bind_i8', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(855);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11803,7 +11806,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_bind_s', sub ($op0, $op1, $op2) {
+    'sp_bind_n', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(856);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11814,18 +11817,18 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_p6oget_o', sub ($op0, $op1, $op2) {
+    'sp_bind_s', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(857);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my $index := $op1.index;$bytecode.write_uint16($index);}
-        {my int $value := $op2;
+        {my int $value := $op1;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
+        {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_p6ogetvt_o', sub ($op0, $op1, $op2, $op3) {
+    'sp_p6oget_o', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(858);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11835,9 +11838,8 @@ BEGIN {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
-        
     },
-    'sp_p6ogetvc_o', sub ($op0, $op1, $op2, $op3) {
+    'sp_p6ogetvt_o', sub ($op0, $op1, int16 $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(859);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11849,7 +11851,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         
     },
-    'sp_p6oget_i', sub ($op0, $op1, $op2) {
+    'sp_p6ogetvc_o', sub ($op0, $op1, int16 $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(860);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11859,8 +11861,9 @@ BEGIN {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
+        
     },
-    'sp_p6oget_n', sub ($op0, $op1, $op2) {
+    'sp_p6oget_i', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(861);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11871,7 +11874,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_p6oget_s', sub ($op0, $op1, $op2) {
+    'sp_p6oget_n', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(862);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11882,18 +11885,18 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_p6obind_o', sub ($op0, $op1, $op2) {
+    'sp_p6oget_s', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(863);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my int $value := $op1;
+        {my $index := $op1.index;$bytecode.write_uint16($index);}
+        {my int $value := $op2;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
-        {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_p6obind_i', sub ($op0, $op1, $op2) {
+    'sp_p6obind_o', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(864);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11904,7 +11907,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_p6obind_n', sub ($op0, $op1, $op2) {
+    'sp_p6obind_i', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(865);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11915,7 +11918,7 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_p6obind_s', sub ($op0, $op1, $op2) {
+    'sp_p6obind_n', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(866);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11926,18 +11929,18 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_deref_get_i64', sub ($op0, $op1, $op2) {
+    'sp_p6obind_s', sub ($op0, int16 $op1, $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(867);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my $index := $op1.index;$bytecode.write_uint16($index);}
-        {my int $value := $op2;
+        {my int $value := $op1;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
+        {my $index := $op2.index;$bytecode.write_uint16($index);}
     },
-    'sp_deref_get_n', sub ($op0, $op1, $op2) {
+    'sp_deref_get_i64', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(868);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11948,7 +11951,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_deref_bind_i64', sub ($op0, $op1, $op2) {
+    'sp_deref_get_n', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(869);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11959,7 +11962,7 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_deref_bind_n', sub ($op0, $op1, $op2) {
+    'sp_deref_bind_i64', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(870);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11970,23 +11973,18 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'sp_getlexvia_o', sub ($op0, $op1, $op2, $op3) {
+    'sp_deref_bind_n', sub ($op0, $op1, int16 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(871);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my int $value := $op1;
-                    if $value < -32768 || 32767 < $value {
-                        nqp::die("Value outside range of 16-bit MAST::IVal");
-                    }
-                    $bytecode.write_uint16($value);}
+        {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my int $value := $op2;
                     if $value < -32768 || 32767 < $value {
                         nqp::die("Value outside range of 16-bit MAST::IVal");
                     }
                     $bytecode.write_uint16($value);}
-        {my $index := $op3.index;$bytecode.write_uint16($index);}
     },
-    'sp_getlexvia_ins', sub ($op0, $op1, $op2, $op3) {
+    'sp_getlexvia_o', sub ($op0, int16 $op1, int16 $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(872);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -12002,9 +12000,25 @@ BEGIN {
                     $bytecode.write_uint16($value);}
         {my $index := $op3.index;$bytecode.write_uint16($index);}
     },
-    'sp_getstringfrom', sub ($op0, $op1, $op2) {
+    'sp_getlexvia_ins', sub ($op0, int16 $op1, int16 $op2, $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(873);
+        {my $index := $op0.index;$bytecode.write_uint16($index);}
+        {my int $value := $op1;
+                    if $value < -32768 || 32767 < $value {
+                        nqp::die("Value outside range of 16-bit MAST::IVal");
+                    }
+                    $bytecode.write_uint16($value);}
+        {my int $value := $op2;
+                    if $value < -32768 || 32767 < $value {
+                        nqp::die("Value outside range of 16-bit MAST::IVal");
+                    }
+                    $bytecode.write_uint16($value);}
+        {my $index := $op3.index;$bytecode.write_uint16($index);}
+    },
+    'sp_getstringfrom', sub ($op0, $op1, int32 $op2) {
+        my $bytecode := $*MAST_FRAME.bytecode;
+        $bytecode.write_uint16(874);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         
         {my int $value := $op2;
@@ -12013,39 +12027,39 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_getwvalfrom', sub ($op0, $op1, $op2) {
+    'sp_getwvalfrom', sub ($op0, $op1, int64 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(874);
+        $bytecode.write_uint16(875);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         
         {my int $value := $op2; $bytecode.write_uint64($value);}
     },
     'sp_jit_enter', sub ($op0) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(875);
+        $bytecode.write_uint16(876);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
     },
     'sp_boolify_iter', sub ($op0, $op1) {
-        my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(876);
-        {my $index := $op0.index;$bytecode.write_uint16($index);}
-        {my $index := $op1.index;$bytecode.write_uint16($index);}
-    },
-    'sp_boolify_iter_arr', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(877);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'sp_boolify_iter_hash', sub ($op0, $op1) {
+    'sp_boolify_iter_arr', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(878);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
-    'sp_cas_o', sub ($op0, $op1, $op2, $op3) {
+    'sp_boolify_iter_hash', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(879);
+        {my $index := $op0.index;$bytecode.write_uint16($index);}
+        {my $index := $op1.index;$bytecode.write_uint16($index);}
+    },
+    'sp_cas_o', sub ($op0, $op1, $op2, $op3) {
+        my $bytecode := $*MAST_FRAME.bytecode;
+        $bytecode.write_uint16(880);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
         {my $index := $op2.index;$bytecode.write_uint16($index);}
@@ -12053,49 +12067,49 @@ BEGIN {
     },
     'sp_atomicload_o', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(880);
+        $bytecode.write_uint16(881);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
     'sp_atomicstore_o', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(881);
+        $bytecode.write_uint16(882);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
     'prof_enter', sub () {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(882);
+        $bytecode.write_uint16(883);
         
     },
     'prof_enterspesh', sub () {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(883);
+        $bytecode.write_uint16(884);
         
     },
     'prof_enterinline', sub ($op0) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(884);
+        $bytecode.write_uint16(885);
         
     },
     'prof_enternative', sub ($op0) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(885);
+        $bytecode.write_uint16(886);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
     },
     'prof_exit', sub () {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(886);
+        $bytecode.write_uint16(887);
         
     },
     'prof_allocated', sub ($op0) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(887);
+        $bytecode.write_uint16(888);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
     },
-    'ctw_check', sub ($op0, $op1) {
+    'ctw_check', sub ($op0, int16 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(888);
+        $bytecode.write_uint16(889);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my int $value := $op1;
                     if $value < -32768 || 32767 < $value {
@@ -12103,10 +12117,10 @@ BEGIN {
                     }
                     $bytecode.write_uint16($value);}
     },
-    'coverage_log', sub ($op0, $op1, $op2, $op3) {
+    'coverage_log', sub (str $op0, int32 $op1, int32 $op2, int64 $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(889);
-        $bytecode.write_uint32($op0);
+        $bytecode.write_uint16(890);
+        $bytecode.write_uint32($*MAST_FRAME.add-string($op0));
         {my int $value := $op1;
                     if $value < -2147483648 || 2147483647 < $value {
                         nqp::die("Value outside range of 32-bit MAST::IVal");
@@ -12119,9 +12133,9 @@ BEGIN {
                     $bytecode.write_uint64($value);}
         {my int $value := $op3; $bytecode.write_uint64($value);}
     },
-    'breakpoint', sub ($op0, $op1) {
+    'breakpoint', sub (int32 $op0, int32 $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(890);
+        $bytecode.write_uint16(891);
         {my int $value := $op0;
                     if $value < -2147483648 || 2147483647 < $value {
                         nqp::die("Value outside range of 32-bit MAST::IVal");
