@@ -312,7 +312,7 @@ class MAST::CompUnit is MAST::Node {
 # Literal values.
 class MAST::SVal is MAST::Node {
     method new(:$value!) {
-        $*MAST_FRAME.add-string(~$value)
+        $value
     }
 }
 class MAST::IVal is MAST::Node {
