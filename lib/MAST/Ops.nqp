@@ -11386,7 +11386,7 @@ BEGIN {
         {my $index := $op2.index;$bytecode.write_uint16($index);}
         {my $index := $op3.index;$bytecode.write_uint16($index);}
     },
-    'sp_guard', sub ($op0, $op1, $op2, $op3) {
+    'sp_guard', sub ($op0, $op1, $op2, uint32 $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(815);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11398,7 +11398,7 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardconc', sub ($op0, $op1, $op2, $op3) {
+    'sp_guardconc', sub ($op0, $op1, $op2, uint32 $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(816);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11410,7 +11410,7 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardtype', sub ($op0, $op1, $op2, $op3) {
+    'sp_guardtype', sub ($op0, $op1, $op2, uint32 $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(817);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11422,7 +11422,7 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardsf', sub ($op0, $op1, $op2) {
+    'sp_guardsf', sub ($op0, $op1, uint32 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(818);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11433,7 +11433,7 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardsfouter', sub ($op0, $op1, $op2) {
+    'sp_guardsfouter', sub ($op0, $op1, uint32 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(819);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11444,7 +11444,7 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardobj', sub ($op0, $op1, $op2, $op3) {
+    'sp_guardobj', sub ($op0, $op1, $op2, uint32 $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(820);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11456,7 +11456,7 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardnotobj', sub ($op0, $op1, $op2, $op3) {
+    'sp_guardnotobj', sub ($op0, $op1, $op2, uint32 $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(821);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11468,7 +11468,7 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardjustconc', sub ($op0, $op1, $op2) {
+    'sp_guardjustconc', sub ($op0, $op1, uint32 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(822);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11479,7 +11479,7 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_guardjusttype', sub ($op0, $op1, $op2) {
+    'sp_guardjusttype', sub ($op0, $op1, uint32 $op2) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(823);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11490,7 +11490,7 @@ BEGIN {
                     }
                     $bytecode.write_uint64($value);}
     },
-    'sp_rebless', sub ($op0, $op1, $op2, $op3) {
+    'sp_rebless', sub ($op0, $op1, $op2, uint32 $op3) {
         my $bytecode := $*MAST_FRAME.bytecode;
         $bytecode.write_uint16(824);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
@@ -11504,7 +11504,7 @@ BEGIN {
     },
     'sp_resolvecode', sub ($op0, $op1) {
         my $bytecode := $*MAST_FRAME.bytecode;
-        $bytecode.write_uint16(824);
+        $bytecode.write_uint16(825);
         {my $index := $op0.index;$bytecode.write_uint16($index);}
         {my $index := $op1.index;$bytecode.write_uint16($index);}
     },
